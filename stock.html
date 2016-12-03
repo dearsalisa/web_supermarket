@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Elements - Transit by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">ร้านขายของ</a></h1>
+				<nav id="nav">
+					<ul>
+						<li>ศลิษา อติวัฒนชัย</li>
+						<li><a href="#" class="button special">ออกจากระบบ</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+					<header class="major">
+						<h2>สินค้าทั้งหมด</h2>
+						<p></p>
+					</header>
+
+
+					<script>
+						function addNewItem() {
+							var div2 = document.getElementById("newitem");
+							var div1 = document.getElementById("addmore");
+							if (div2.style.display !== "block" && div1.style.display == "none" ) {
+								div2.style.display = "block";
+							}
+							else {
+								div2.style.display = "none";
+							}
+						}
+
+						function addStock() {
+							var div1 = document.getElementById("addmore");
+							var div2 = document.getElementById("newitem");
+							if (div1.style.display !== "block" && div2.style.display == "none") {
+								div1.style.display = "block";
+							}
+							else {
+								div1.style.display = "none";
+							}
+						}
+					</script>
+
+					<center>
+						<ul class="actions" id="button">
+							<li onclick="addNewItem()"><a class="button big">เพิ่มสินค้าใหม่</a></li>
+							<li onclick="addStock()"><a class="button big">เพิ่มจำนวนสินค้า</a></li>
+						</ul>
+					</center>
+
+					<div id="newitem" style="display: none">
+						<center>
+							<div class="8u 12u$(medium)">
+								<section class="box_add">
+									<h3>เพิ่มสินค้าใหม่</h3>
+
+									<div class="6u 12u$(4)">
+										<input type="text" value="" placeholder="รหัสสินค้า" />
+									</div>
+									<br>
+									<div class="6u 12u$(4)">
+										<input type="text" value="" placeholder="ชื่อสินค้า" />
+									</div>
+									<br>
+									<div class="6u 12u$(4)">
+										<input type="text" value="" placeholder="จำนวน" />
+									</div>
+									<br>
+									<ul class="actions">
+										<li><input type="submit" value="ตกลง" class="special" /></li>
+									</ul>
+								</section>
+							</div>
+						</center>
+					</div>
+
+					<div id="addmore" style="display: none">
+						<center>
+							<div class="8u 12u$(medium)">
+								<section class="box_add">
+									<h3>เพิ่มจำนวนสินค้า</h3>
+
+									<div class="6u 12u$(4)">
+										<input type="text" value="" placeholder="รหัสสินค้า" />
+									</div>
+									<br>
+									<div class="6u 12u$(4)">
+										<input type="text" value="" placeholder="จำนวน" />
+									</div>
+									<br>
+									<ul class="actions">
+										<li><input type="submit" value="ตกลง" class="special" /></li>
+									</ul>
+								</section>
+							</div>
+						</center>
+					</div>
+
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>รหัส</th>
+									<th>ชื่อสินค้า</th>
+									<th>ราคาต่อหน่วย</th>
+									<th>จำนวน</th>
+									<!-- <th>แก้ไข</th>	-->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>8851016001374</td>
+									<td>ข้าวเกรียบกุ้ง คาลบร้ รส พริกไทยดำ
+										<div style="text-align: right; margin-top: -1.6em;"><a href="#">(แก้ไข)</a></div>
+									</td>
+									<td>29.99</td>
+									<td>4</td>
+									<!-- <td><a href="#">แก้ไข</a></td> -->
+								</tr>
+								<tr>
+									<td>8851016001374</td>
+									<td>ข้าวเกรียบกุ้ง คาลบร้ รส พริกไทยดำ
+										<div style="text-align: right; margin-top: -1.6em;"><a href="#">(แก้ไข)</a></div>
+									</td>
+									<td>19.00</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>8851016001374</td>
+									<td>ข้าวเกรียบกุ้ง คาลบร้ รส พริกไทยดำ
+										<div style="text-align: right; margin-top: -1.6em;"><a href="#">(แก้ไข)</a></div>
+									</td>
+									<td>29.00</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td>8851016001374</td>
+									<td>ข้าวเกรียบกุ้ง คาลบร้ รส พริกไทยดำ
+										<div style="text-align: right; margin-top: -1.6em;"><a href="#">(แก้ไข)</a></div>
+									</td>
+									<td>19.00</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>8851016001374</td>
+									<td>ข้าวเกรียบกุ้ง คาลบร้ รส พริกไทยดำ
+										<div style="text-align: right; margin-top: -1.6em;"><a href="#">(แก้ไข)</a></div>
+									</td>
+									<td>29.00</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<!-- <tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr> -->
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+	</body>
+</html>
